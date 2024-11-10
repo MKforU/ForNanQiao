@@ -1,0 +1,315 @@
+* {
+  font-family: "Poppins";
+  outline: none;
+}
+
+body {
+  background: #f9e7f0;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  overflow-x: hidden;
+  padding: 1em;
+}
+
+.ex {
+  padding-bottom: 53em;
+}
+
+.screen-1 {
+  margin-top: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #f8e7f1;
+  box-shadow: 20px 20px 60px #d3c4cd, -20px -20px 60px #ffffff, 0 0 2vh 2vh #f9e7f0;
+  padding: 1em;
+  border-radius: 20px;
+}
+.screen-1 header {
+  padding: 1.1em;
+  display: flex;
+  gap: 3.4em;
+  color: #b6aaae;
+}
+.screen-1 header ion-icon {
+  padding: 0.5em;
+  background: linear-gradient(145deg, #fff7ff, #dfd0d9);
+  box-shadow: 20px 20px 60px #d3c4cd, -20px -20px 60px #ffffff;
+  border-radius: 50%;
+}
+.screen-1 header span {
+  font-weight: bold;
+  font-size: 0.7em;
+  margin-top: 0.7em;
+}
+.screen-1 .song {
+  margin-top: 4em;
+  padding: 0.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.screen-1 .song .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.1em;
+}
+.screen-1 .song .img-container img {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  border: 0.45em solid #f6e0eb;
+  box-shadow: 20px 20px 60px #d3c4cd, -20px -20px 60px #ffffff, 0 0 2vh 2vh #f9e7f0;
+}
+.screen-1 .song h1 {
+  color: #675f63;
+}
+.screen-1 .song h6 {
+  color: #bcaeb3;
+  font-weight: normal;
+  margin-top: -1em;
+}
+.screen-1 .slider {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-1 .slider input[type=range] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  width: 90%;
+}
+.screen-1 .slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.2em;
+  height: 1.2em;
+  background: radial-gradient(#faa3cc 30%, #f5e0ea 30%);
+  border-radius: 50%;
+  margin-top: -5px;
+  cursor: pointer;
+  box-shadow: 0 0 30px #f1f1f1;
+}
+.screen-1 .slider input[type=range]::-moz-range-thumb, .screen-1 .slider input[type=range]::-ms-thumb {
+  width: 1.2em;
+  height: 1.2em;
+  background: radial-gradient(#faa3cc 30%, #f5e0ea 30%);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 30px #f1f1f1;
+}
+.screen-1 .slider input[type=range]:focus {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.screen-1 .slider input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.screen-1 .slider input[type=range]::-webkit-slider-runnable-track {
+  background: #fce9f2;
+  width: 100%;
+  border-radius: 10px;
+  height: 0.5em;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px -2px rgba(0, 0, 0, 0.5);
+}
+.screen-1 .slider input[type=range]::-moz-range-track, .screen-1 .slider input[type=range]::-ms-track {
+  background: #fce9f2;
+  width: 100%;
+  border-radius: 10px;
+  height: 0.5em;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px -2px rgba(0, 0, 0, 0.5);
+}
+.screen-1 .slider input[type=range]::-moz-range-progress {
+  background: #eda6c8;
+}
+.screen-1 .slider input[type=range]::-ms-fill-lower {
+  background: #eda6c8;
+}
+.screen-1 .slider span {
+  color: #908489;
+  font-size: 0.7em;
+  margin-top: -3em;
+  z-index: 2;
+}
+.screen-1 .slider .start {
+  margin-right: -2em;
+}
+.screen-1 .slider .end {
+  margin-left: -2.2em;
+}
+.screen-1 .controls {
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+}
+.screen-1 .controls button {
+  background: #ffebf3;
+  box-shadow: 0 0 30px #e5cdda;
+  padding: 0.8em;
+  color: #908489;
+  border: 1px solid #ffebf3;
+  border-radius: 50%;
+}
+.screen-1 .controls button:nth-child(2n) {
+  box-shadow: 0 0 30px #d9c4d0;
+  background: #eda6c8;
+  color: white;
+  border: 1px solid #eda6c8;
+}
+
+.screen-2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #f8e7f1;
+  box-shadow: 20px 20px 60px #d3c4cd, -20px -20px 60px #ffffff, 0 0 2vh 2vh #f9e7f0;
+  padding: 1em;
+  border-radius: 20px;
+  padding: 0;
+  margin-top: auto;
+}
+.screen-2 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.65em;
+  color: #b6aaae;
+  font-weight: bold;
+  padding: 2em;
+}
+.screen-2 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+}
+.screen-2 .title ion-icon {
+  color: #908488;
+  padding: 0.7em;
+  background: #fedceb;
+  border-radius: 50%;
+  border: 0.1em solid #e6d5dd;
+}
+.screen-2 .title img {
+  width: 7em;
+  border-radius: 50%;
+  border: 0.45em solid #f6e0eb;
+  box-shadow: 20px 20px 60px #d3c4cd, -20px -20px 60px #ffffff, 0 0 2vh 2vh #f9e7f0;
+}
+.screen-2 .songs {
+  display: flex;
+  flex-direction: column;
+}
+.screen-2 .songs .song {
+  margin-top: -1em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  padding: 1em;
+}
+.screen-2 .songs .song .details {
+  display: flex;
+  flex-direction: column;
+  color: #b6a5ab;
+}
+.screen-2 .songs .song .details span {
+  font-size: 0.7em;
+  margin-top: -1.7em;
+  color: #dccbd2;
+  font-weight: bold;
+}
+.screen-2 .songs .song button {
+  align-self: flex-end;
+  border: 0.1em solid #f5d6e3;
+  border-radius: 50%;
+  padding-top: 0.45em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.45em;
+  box-shadow: 0 0 2em 0.1em #fff, inset 0 0 1em -0.8em #333, inset 0 0 3em -1.9em #fff;
+}
+.screen-2 .songs .song button ion-icon {
+  color: #a9939d;
+}
+.screen-2 .songs .song:nth-child(1n) button {
+  margin-left: auto;
+  background: #fedceb;
+}
+.screen-2 .songs .song:nth-child(1n) button ion-icon {
+  color: #a9939d;
+}
+.screen-2 .songs .song:nth-child(3n) button {
+  background: #fedceb;
+  margin-left: auto;
+}
+.screen-2 .songs .song:nth-child(3n) button ion-icon {
+  color: #a9939d;
+}
+.screen-2 .songs .song:nth-child(2n) button {
+  margin-left: auto;
+  background: #eda6c8;
+  /*这里控制深色*/
+}
+.screen-2 .songs .song:nth-child(2n) button ion-icon {
+  color: white;
+  /*这里也是深色*/
+}
+.screen-2 .songs .song:nth-child(4n) button {
+  background: #fedceb;
+  margin-left: auto;
+}
+.screen-2 .songs .song:nth-child(4n) button ion-icon {
+  color: #a9939d;
+}
+.screen-2 .songs .song:nth-child(5n) button {
+  margin-left: auto;
+  background: #fedceb;
+}
+.screen-2 .songs .song:nth-child(5n) button ion-icon {
+  color: #a9939d;
+}
+.screen-2 .songs .song:nth-child(6n) button {
+  margin-left: auto;
+  background: #fedceb;
+}
+.screen-2 .songs .song:nth-child(6n) button ion-icon {
+  color: #a9939d;
+}
+.screen-2 .songs .song:nth-child(7n) button {
+  margin-left: auto;
+  background: #fedceb;
+}
+.screen-2 .songs .song:nth-child(7n) button ion-icon {
+  color: #a9939d;
+}
+
+@media screen and (max-width: 730px) {
+  body {
+    flex-direction: column;
+  }
+
+  .screen-1, .screen-2 {
+    margin: auto;
+  }
+}
